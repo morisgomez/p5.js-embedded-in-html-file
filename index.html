@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <main>
+    </main>
+    <script>
+var x = 0;
+var y = 0;
+
+function setup() 
+{
+  createCanvas(7000, 1000);
+}
+
+function draw() 
+{
+  background(51);
+  
+  for (var i = 0; i < 100; i = i + 1) 
+  {
+  x = random(0, 7000);
+  y = random(0, 1000);
+  ellipse(x, y, 25, 25);
+  }
+}
+    </script>
+  </body>
+</html>
